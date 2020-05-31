@@ -1,0 +1,253 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 380px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px;
+    height: 380px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(178, 206, 214, .3); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b2ced6; 
+    border-radius: 10px;
+  }
+
+#map{
+    height: 100vh;
+}
+
+.left-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 100vh;
+    background-color: rgba(238, 238, 238, 0.8);
+    z-index: 50;
+}
+
+.title{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    z-index: 999;
+    top: 100px;
+    left: 100px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.search-container{
+    position: absolute;
+    width:400px;
+    height:60px;
+    top: 230px;
+    left: 100px;
+    background-color: #b2ced6;
+    z-index: 999;
+    border-radius: 30px;
+    color: white;
+}
+
+.search{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+#search-field{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+#search-field:focus {
+    outline: none;
+}
+
+.search .fas{
+color: white;
+font-size: 25px;
+}
+
+.friends-list-container{
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    top: 320px;
+    left: 100px;
+    border-radius: 30px; 
+    bottom: 100px;
+    overflow-y: scroll;
+}
+
+.friends-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.friends-info-container{
+    flex-grow: 1;
+}
+.friends-adress{
+    font-size: 20px;
+    color: #454E53;
+}
+
+.friends-phone{
+    color: #b2ced6;
+    border-bottom:1px solid #eee;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.friends-number-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.friends-number{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #b2ced6;
+}
+
+.bold{
+    font-weight: bold;
+    color: #114963;
+}
+
+.friends-list span {
+    margin: 5px;
+    display: block;
+}
+
+.creator{
+    height: 15px;
+    width: 400px;
+    position: absolute;
+    bottom: 45px;
+    left: 100px;
+    text-align: center;
+    font-size: 15px;
+    color: #454E53;
+    z-index: 100;
+}
+
+.creator a{
+ text-decoration: none;
+}
+
+.friends-info-window {
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.friends-info-name {
+    font-size: 24px !important; 
+    font-weight: bolder !important; 
+    color: rgba(0,0,0, 0.87);
+    padding-left: 8px;
+    display:flex;
+    align-items: center;
+}
+
+.profile{
+    border-bottom: 1px solid #00000029;
+    display: flex;
+    flex-direction: row;
+}
+.prof-pic img {
+    border-radius: 50%;
+    margin-top: 6px;
+    padding-bottom: 6px;
+    width: 50px;
+    height: 50px;
+}
+/* .prof-pic {
+    margin-top: 6px;
+    padding-bottom: 6px;
+    width: 50px;
+    height: 50px;
+} */
+
+.friends-info-address, .friends-info-phone {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.friends-info-address .circle, .friends-info-phone .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+.friends-container-background {
+    width: 100%;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    transition: background 0.2s ease-in-out;
+}
+
+.friends-container-background:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+button{
+    margin-top: 8px;
+    background-color: transparent;
+    border: 2px solid #1985A1;
+    color: #1985A1;
+    border-radius: 18px;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
